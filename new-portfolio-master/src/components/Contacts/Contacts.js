@@ -141,7 +141,7 @@ function Contacts() {
        console.log(res)
      }).catch(err=> console.log(err))
      
-     alert("E-mail Sent Thank You")
+     alert("Thanks for contacting us.✔️")
      window.location.reload(false)
 
     if (name && email && message) {
