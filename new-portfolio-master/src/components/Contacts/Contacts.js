@@ -4,6 +4,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import axios from "axios";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
+import emailjs from "emailjs-com"
 import {
   FaTwitter,
   FaLinkedinIn,
@@ -131,6 +132,17 @@ function Contacts() {
 
   const handleContactForm = (e) => {
     e.preventDefault();
+    emailjs.sendForm("service_bluwkc5" , 
+    "template_29rf6n9",
+     e.target, 
+     "0VYSHAKQAjRQ5qG8d" )
+     
+     .then(res=>{
+       console.log(res)
+     }).catch(err=> console.log(err))
+     
+     alert("E-mail Sent Thank You")
+     window.location.reload(false)
 
     if (name && email && message) {
       if (isEmail(email)) {
@@ -158,6 +170,7 @@ function Contacts() {
       setErrMsg("Enter all the fields");
       setOpen(true);
     }
+   
   };
 
   return (
@@ -180,7 +193,7 @@ function Contacts() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   type="text"
-                  name="Name"
+                  name="name"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -193,7 +206,7 @@ function Contacts() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   type="email"
-                  name="Email"
+                  name="email"
                   className={`form-input ${classes.input}`}
                 />
               </div>
@@ -206,7 +219,7 @@ function Contacts() {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   type="text"
-                  name="Message"
+                  name="message"
                   className={`form-message ${classes.message}`}
                 />
               </div>

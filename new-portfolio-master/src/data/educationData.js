@@ -23,7 +23,7 @@ export const educationData = [
 
   {
     id: 4,
-    institution: " Kwndriya Vidyalaya Tughlakabad, New Delhi",
+    institution: " Kendriya Vidyalaya Tughlakabad, New Delhi",
     course: "12th",
     startYear: "2013",
     endYear: "2014",
