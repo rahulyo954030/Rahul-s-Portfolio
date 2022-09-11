@@ -1,8 +1,8 @@
 export const aboutData = {
   title: "Who I am",
   description1:
-    "Full Stack Web Developer",
+    "Full-Stack Web Developer",
   description2:
-    "Right now I have finished my Full Stack Web Development course from Masai School, Bengaluru. I love to learn and explore new areas. I am highly-proficient in MERN stack and eager to learn and ready to contribute to the development of an organization and also open to work as a freelancer.",
+    "Full-Stack Web Developer with the ability to learn and collaborate in rapidly changing environments and compositions worked through 1000+ hours of Bootcamp structure learning Javascript, Nodejs, Reactjs, MongoDB, Express, HTML, CSS.",
   image: 2,
 };

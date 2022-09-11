@@ -1,4 +1,4 @@
-import resume from "../assets/pdf/Rahul SIngh fp01_132 .pdf";
+import resume from "../assets/pdf/Rahul_Singh_Resume.pdf";
 
 
 export const headerData = {

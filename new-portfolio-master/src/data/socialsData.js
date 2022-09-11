@@ -11,5 +11,5 @@ export const socialsData = {
   gitlab: "https://gitlab.com/rahulyo954030",
   youtube: "https://www.youtube.com/channel/UCrzi1hHbpXC2STVDwoihhKA",
   resume:
-    "https://drive.google.com/file/d/1z6S-tqT9moZ2L_DqTLrzgr3QEZfX_TQi/view?usp=sharing",
+    "https://drive.google.com/file/d/1qsR2NV1L8mYt6_vKj9dFhEWcdft2D4gv/view?usp=sharing",
 };
